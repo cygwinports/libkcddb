@@ -1,0 +1,14 @@
+inherit kde4
+
+NAME="libkcddb"
+VERSION=4.10.5
+RELEASE=1
+CATEGORY="Libs"
+SUMMARY="KDE CDDB library"
+
+PKG_NAMES="libkcddb4 libkcddb-common libkcddb-devel"
+libkcddb4_REQUIRES="libkcddb-common"
+libkcddb4_CONTENTS="usr/bin/cygkcddb-4.dll usr/lib/kde4/kcm_cddb.dll"
+libkcddb_common_CONTENTS="usr/share/doc/ usr/share/kde4/"
+libkcddb_devel_REQUIRES="libkdecore-devel"
+libkcddb_devel_CONTENTS="usr/include/ usr/lib/cmake/ usr/lib/lib*"
